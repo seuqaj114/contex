@@ -367,7 +367,7 @@ defmodule Contex.Plot do
       x_label: Keyword.get(attrs, :x_label),
       y_label: Keyword.get(attrs, :y_label),
       plot_options:
-        Enum.into(Keyword.take(attrs, [:show_x_axis, :show_y_axis, :legend_setting]), %{})
+        Enum.into(Keyword.take(attrs, [:show_x_axis, :show_y_axis, :legend_setting, :left_margin, :top_margin, :right_margin, :bottom_margin]), %{})
     }
   end
 
